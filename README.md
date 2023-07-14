@@ -1,27 +1,43 @@
 # AppTodo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+Este é um projeto de lista de tarefas construído com Angular. Permite ao usuário adicionar, marcar como concluído e excluir itens da lista. Os itens marcados como concluídos são movidos para o final da lista, enquanto os outros permanecem na mesma posição. Além disso, o estado da lista é persistido no navegador usando o LocalStorage, o que permite que os itens sejam mantidos mesmo após recarregar a página.
 
-## Development server
+## Recursos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Adicionar novos itens à lista
+- Marcar itens como concluídos
+- Excluir itens individualmente
+- Excluir todos os itens de uma vez
+- Persistência dos itens usando o LocalStorage
 
-## Code scaffolding
+## Instalação
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Siga estas etapas para executar o projeto localmente:
 
-## Build
+1. Clone este repositório para o seu ambiente de desenvolvimento:
+git clone <URL do repositório>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Navegue até o diretório do projeto:
+cd nome-do-projeto
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Instale as dependências do projeto usando o npm:
+npm install
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+4. Inicie o servidor de desenvolvimento:
+ng serve --open
 
-## Further help
+5. Abra o navegador e acesse `http://localhost:4200` para ver o projeto em execução.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Uso
+
+1. Digite um novo item no campo de entrada e pressione "Enter" ou clique no botão "Adicionar" para adicioná-lo à lista.
+
+2. Para marcar um item como concluído, clique na caixa de seleção ao lado do item.
+
+3. Para excluir um item individualmente, clique no botão "Excluir" ao lado do item.
+
+4. Para excluir todos os itens da lista, clique no botão "Excluir Todos".
+
+5. Você pode recarregar a página e os itens da lista serão restaurados automaticamente a partir do LocalStorage.
